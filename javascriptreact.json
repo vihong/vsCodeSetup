@@ -1,0 +1,48 @@
+{
+	"Theme Props": {
+		"prefix": ":tp",
+		"body": [
+			"${props => props.theme.$1}",
+			"$2"
+		],
+		"description": "Theme Props"
+	},
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"import PropTypes": {
+		"prefix": "iprop",
+		"body": [
+			"import PropTypes from 'prop-types';"
+		],
+		"description": "import PropTypes from 'prop-types"
+	},
+	"import ReactDOM": {
+		"prefix": "ird",
+		"body": [
+			"import ReactDOM from 'react-dom';"
+		],
+		"description": "import ReactDOM from 'react-dom'"
+	},
+	"import ... from": {
+		"prefix": "im",
+		"body": [
+			"import $1 from './$1';",
+			"$2"
+		],
+		"description": "import something from a file"
+	},
+	"import styled from": {
+		"prefix": "ims",
+		"body": [
+			"import styled from 'styled-components';",
+			"$2"
+		],
+		"description": "import styled-components library"
+	}
+}
