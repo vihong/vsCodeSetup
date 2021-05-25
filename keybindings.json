@@ -1,0 +1,118 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+c",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "${${TM_SELECTED_TEXT}${1}}"
+        }
+    },
+    {
+        "key": "alt+b",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "`${TM_SELECTED_TEXT}${1}`"
+        }
+    },
+    {
+        "key": "alt+p",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "${1}${TM_SELECTED_TEXT}${1}"
+        }
+    },
+    {
+        "key": "alt+ctrl+w",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "<${1}>${TM_SELECTED_TEXT}${2}</${1}>"
+        }
+    },
+    {
+        "key": "alt+w",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "<${TM_SELECTED_TEXT}${1}/>"
+        }
+    },
+    {
+        "key": "cmd+shift+i",
+        "command": "extension.wrapTag",
+        "when": "editorTextFocus",
+    },
+    {
+        "key": "cmd+alt+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "console.log('${TM_SELECTED_TEXT}$1')"
+        }
+    },
+    {
+        "key": "cmd+alt+l",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "console.log('${TM_SELECTED_TEXT}$1: ', ${TM_SELECTED_TEXT}$1)$2"
+        }
+    },
+    {
+        "key": "cmd+k k",
+        "command": "markdown.showLockedPreviewToSide"
+    },
+    {
+        "key": "cmd+",
+        "command": "extension.sidePreview",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+q s",
+        "command": "-extension.sidePreview",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k l",
+        "command": "markdown.showPreviewToSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+k v",
+        "command": "-markdown.showPreviewToSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+",
+        "command": "markdown-preview-enhanced.openPreviewToTheSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+k v",
+        "command": "-markdown-preview-enhanced.openPreviewToTheSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+k l",
+        "command": "markdown-preview-enhanced.runAllCodeChunks",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "-markdown-preview-enhanced.runAllCodeChunks",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "cmd+k m",
+        "command": "extension.fullPreview",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+q f",
+        "command": "-extension.fullPreview",
+        "when": "editorTextFocus"
+    }
+]
